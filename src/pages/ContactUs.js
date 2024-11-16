@@ -46,18 +46,36 @@ const ContactUs = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (validateForm()) {
-      console.log("Submitted Form Data:", formData);
-      alert("Thank you for getting in touch! We will respond shortly.");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-      setErrors({});
+      try {
+        // Send the form data to Netlify function
+        const response = await fetch("/.netlify/functions/contact-form", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          alert("Thank you for getting in touch! We will respond shortly.");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+          setErrors({});
+        } else {
+          alert("Failed to send your message. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("An error occurred while sending your message.");
+      }
     }
   };
 

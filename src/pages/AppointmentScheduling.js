@@ -69,7 +69,7 @@ const AppointmentForm = () => {
     if (validateForm()) {
       try {
         // Make the API call to the Netlify serverless function
-        const response = await fetch("/.netlify/functions/send-email", {
+        const response = await fetch("/.netlify/functions/sendEmail", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
