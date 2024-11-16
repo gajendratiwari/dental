@@ -1,0 +1,13 @@
+{
+  "services": [
+    { "id": 1, "name": "Cleaning" },
+    { "id": 2, "name": "Orthodontics" },
+    { "id": 3, "name": "Emergency" }
+  ],
+  "providers": [
+    { "id": 1, "name": "Dr. Smith" },
+    { "id": 2, "name": "Dr. Green" },
+    { "id": 3, "name": "Dr. Brown" }
+  ],
+  "availableTimes": ["9:00 AM", "11:00 AM", "2:00 PM", "4:00 PM"]
+}

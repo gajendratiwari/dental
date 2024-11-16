@@ -1,0 +1,89 @@
+.navbar {
+  grid-column: span 12; // Ensure the navbar spans all columns
+  background-color: #333;
+  color: #fff;
+  padding: $padding-sm 0 $padding-sm 0;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Positions the navbar at the top of the viewport */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  width: 100%; /* Ensure the navbar spans full width */
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // 12 columns grid within navbar
+
+  &__login {
+    grid-column: 12 / span 1; // Move login link to the last column
+    margin-left: auto; // For smaller screens
+  }
+
+  &__toggle {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__links {
+    grid-column: span 12; // Make links span all columns in grid
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    &--open {
+      display: flex; // Display when open
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      top: 100%;
+      left: 0;
+    }
+
+    li .active {
+      color: #4caf50;
+      font-weight: bold;
+      border-bottom: 2px solid #4caf50;
+    }
+
+    li {
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #444;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+      }
+    }
+
+    // Responsive layout for links on large screens
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      width: 100%;
+      background: none;
+
+      li {
+        border: none;
+        padding: 0 1rem;
+
+        a {
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}

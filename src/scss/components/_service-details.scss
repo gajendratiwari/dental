@@ -1,0 +1,92 @@
+.service-detail {
+  grid-column: 1 / -1;
+
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  h1 {
+    font-size: $heading-font-size-h1;
+    color: $text-white;
+    margin-bottom: $margin-md;
+  }
+
+  p {
+    font-size: $font-size-md;
+    color: $text-white;
+    line-height: 1.6;
+    margin-bottom: $margin-md;
+  }
+
+  h3 {
+    font-size: $heading-font-size-h3;
+    color: $text-white;
+    margin-top: $margin-md;
+    margin-bottom: $margin-md;
+  }
+
+  ul {
+    padding-left: $padding-md;
+    margin-bottom: $margin-md;
+
+    li {
+      font-size: $font-size-sm;
+      color: $text-white;
+      line-height: 1.6;
+      margin-bottom: $margin-sm;
+    }
+  }
+
+  .before-after {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $margin-md;
+
+    h3 {
+      margin-bottom: $margin-sm;
+      text-align: center;
+      color: $text-white;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    @include respond-to("small") {
+      div {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+/* Responsive styles for smaller screens */
+@include respond-to("small") {
+  .service-detail {
+    padding: $padding-sm;
+  }
+
+  h1 {
+    font-size: $heading-font-size-h3;
+  }
+
+  p,
+  li {
+    font-size: $font-size-sm;
+  }
+
+  h3 {
+    font-size: $heading-font-size-h2;
+  }
+}

@@ -1,0 +1,90 @@
+// _variables.scss (or wherever you define your SCSS variables)
+
+$font-size-xs: 0.75rem; // Extra small text (12px)
+$font-size-sm: 1rem; // Small text (16px)
+$font-size-md: 1.25rem; // Medium text (20px)
+$font-size-lg: 1.5rem; // Large text (24px)
+$font-size-xl: 2rem; // Extra large text (32px)
+$font-size-xxl: 3rem; // Super large text (48px)
+
+$heading-font-size-h1: 3.5rem; // Font size for h1
+$heading-font-size-h2: 2.5rem; // Font size for h2
+$heading-font-size-h3: 2rem; // Font size for h3
+$heading-font-size-h4: 1.75rem; // Font size for h4
+$heading-font-size-h5: 1.5rem; // Font size for h5
+$heading-font-size-h6: 1.25rem; // Font size for h6
+
+$line-height-normal: 1.5; // Default line height
+$line-height-tight: 1.2; // Tight line height
+$line-height-loose: 1.8; // Loose line height
+
+// _variables.scss (or wherever you define your SCSS variables)
+
+// Primary Colors
+$primary-color: #007bff; // Main brand color (e.g., blue)
+$primary-light: lighten(
+  $primary-color,
+  10%
+); // Lighter version of primary color
+$primary-dark: darken($primary-color, 10%); // Darker version of primary color
+
+// Secondary Colors
+$secondary-color: #6c757d; // Secondary color (e.g., gray)
+$secondary-light: lighten($secondary-color, 10%);
+$secondary-dark: darken($secondary-color, 10%);
+
+// Accent Colors
+$accent-color: #28a745; // Accent color (e.g., green)
+$accent-light: lighten($accent-color, 10%);
+$accent-dark: darken($accent-color, 10%);
+
+// Neutral Colors
+$neutral-lightest: #f8f9fa; // Very light gray, for light backgrounds
+$neutral-light: #e9ecef; // Light gray
+$neutral: #6c757d; // Neutral gray for text and borders
+$neutral-dark: #343a40; // Darker gray for more emphasis
+$neutral-darkest: #212529; // Almost black, used for dark backgrounds or text
+
+// Background Colors
+$background-light: #ffffff; // Light background color (white)
+$background-dark: #343a40; // Dark background color (dark gray)
+
+// Text Colors
+$text-primary: #212529; // Primary text color (dark)
+$text-secondary: #6c757d; // Secondary text color (gray)
+$text-muted: #adb5bd; // Muted text color (lighter gray)
+$text-white: #ffffff; // White text color
+
+// Border Colors
+$border-light: #dee2e6; // Light border color
+$border-dark: #343a40; // Darker border color
+$border-muted: #ced4da; // Muted border color for inputs and dividers
+
+// Status/Feedback Colors
+$success-color: #28a745; // Green color for success (e.g., success message)
+$danger-color: #dc3545; // Red color for danger (e.g., error message)
+$warning-color: #ffc107; // Yellow color for warning (e.g., warning message)
+$info-color: #17a2b8; // Blue color for info (e.g., informational message)
+
+// Additional Useful Colors
+$black: #000000; // Pure black color
+$white: #ffffff; // Pure white color
+$transparent: rgba(0, 0, 0, 0); // Transparent color for overlays or borders
+
+// Optional: Creating Shades for Specific Elements
+$shadow-light: rgba(0, 0, 0, 0.1); // Light shadow color for subtle effects
+$shadow-dark: rgba(0, 0, 0, 0.3); // Dark shadow color for stronger effects
+
+// Margin variables
+$margin-xs: 0.5rem; // Extra small margin
+$margin-sm: 1rem; // Small margin
+$margin-md: 2rem; // Medium margin
+$margin-lg: 3rem; // Large margin
+$margin-xl: 4rem; // Extra large margin
+
+// Padding variables
+$padding-xs: 0.5rem; // Extra small padding
+$padding-sm: 1rem; // Small padding
+$padding-md: 2rem; // Medium padding
+$padding-lg: 3rem; // Large padding
+$padding-xl: 4rem; // Extra large padding

@@ -1,0 +1,56 @@
+// Button.scss
+
+// Base button styling
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+// Button types (primary, secondary, etc.)
+.btn--primary {
+  background-color: #007bff;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+}
+
+.btn--secondary {
+  background-color: #6c757d;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: #5a6268;
+  }
+}
+
+// Button sizes
+.btn--small {
+  padding: 0.3em 1em;
+  font-size: 0.875rem;
+}
+
+.btn--medium {
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+}
+
+.btn--large {
+  padding: 0.7em 2em;
+  font-size: 1.125rem;
+}

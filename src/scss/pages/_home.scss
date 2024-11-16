@@ -1,0 +1,159 @@
+@import "../../scss/base/mixins";
+
+.home-container {
+  grid-column: 1 / -1;
+
+  &__items {
+    text-align: center;
+  }
+
+  .hero {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* Dark gradient overlay */ url("../../assets/images/hero.jpg"); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    padding: 0;
+    box-sizing: border-box;
+
+    &__content {
+      max-width: 600px; /* Limit width for readability */
+      padding: 20px; /* Inner padding for spacing */
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px;
+      align-items: center; /* Center-align items */
+      text-align: center; /* Center text within each item */
+
+      h1 {
+        font-size: $heading-font-size-h1;
+        color: $text-white; /* Make the text white so it's readable on dark background */
+        margin: 0;
+      }
+
+      p {
+        font-size: $font-size-md;
+        color: $text-white; /*Make the text white so it's readable on dark background */
+        margin: 0;
+        max-width: 200px; /* To prevent text from stretching too wide */
+      }
+    }
+  }
+
+  .service-overview {
+    width: 100%; /* Full width */
+
+    &__container {
+      padding: $padding-xl 0 $padding-xl 0;
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      flex-direction: column;
+      gap: 10px;
+
+      h2 {
+        font-size: $heading-font-size-h2;
+        color: $text-white;
+      }
+    }
+    &__services {
+      display: flex; /* Use Flexbox to arrange items horizontally */
+      justify-content: space-between; /* Spread out the items with space between them */
+      align-items: flex-start; /* Align items to the top */
+      gap: 2rem; /* Optional: Space between the items */
+      flex-wrap: wrap; /* Wrap items on smaller screens if necessary */
+      padding: 2rem; /* Add padding around the container */
+
+      &-item {
+        background-color: $secondary-dark;
+        padding: 1rem; /* Add padding inside each item */
+        border-radius: 8px; /* Rounded corners for a nice effect */
+        width: 30%; /* Set each item to take up 30% of the container */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        text-align: center; /* Center-align text */
+        transition: transform 0.6s ease, border-width 0.6s ease;
+        &:hover {
+          transform: scale(1.05); /* Slight zoom in effect */
+          border-width: 4px; /* Increase the border size on hover */
+        }
+
+        h3 {
+          font-size: $heading-font-size-h3;
+          color: $text-white;
+          margin-bottom: $margin-sm;
+        }
+        p {
+          font-size: $font-size-sm;
+          color: $text-white;
+          margin-bottom: $margin-sm;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-xl 0 $padding-xl 0;
+    background: linear-gradient(
+      135deg,
+      rgba(55, 185, 237, 0.8),
+      rgba(255, 192, 203, 0.8),
+      rgba(255, 165, 0, 0.8)
+    );
+
+    &__container {
+      text-align: center;
+      border-radius: 8px;
+      max-width: 800px;
+    }
+
+    &__heading {
+      font-size: $heading-font-size-h4;
+      margin-bottom: $margin-sm;
+      color: $text-white;
+    }
+
+    &__text {
+      padding: $padding-xl $padding-md $padding-xl $padding-md;
+      font-size: $font-size-md;
+      line-height: 1.6;
+      margin-bottom: $margin-sm;
+      color: $text-white;
+    }
+  }
+  @include respond-to("small") {
+    .hero {
+      &__content {
+        h1 {
+          font-size: $font-size-xl;
+        }
+        p {
+          font-size: $font-size-sm;
+        }
+      }
+    }
+    .service-overview {
+      &__services {
+        flex-direction: column;
+
+        &-item {
+          width: 100%;
+
+          h3 {
+            font-size: $font-size-md;
+          }
+        }
+      }
+    }
+  }
+  .appointment {
+    padding: $padding-sm 0 $padding-xl 0;
+  }
+}

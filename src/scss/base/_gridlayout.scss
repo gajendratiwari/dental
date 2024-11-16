@@ -1,0 +1,36 @@
+// Variables
+$columns: 12;
+
+// Mixin for a full-screen grid container
+@mixin full-screen-grid {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+// Mixin for grid item spanning across columns
+@mixin grid-span($span) {
+  grid-column: span $span;
+}
+
+// Responsive Breakpoints
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Invalid breakpoint: #{$breakpoint}.";
+  }
+}

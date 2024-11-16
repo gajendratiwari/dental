@@ -1,0 +1,76 @@
+.patient-testimonial {
+  &__container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: $padding-xl 0 $padding-xl 0;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: $heading-font-size-h4;
+    margin-bottom: $padding-md;
+    color: $text-white;
+  }
+
+  &__testimonials {
+    display: flex;
+    justify-content: center;
+    gap: $padding-md;
+    overflow: hidden;
+  }
+
+  &__testimonial-item {
+    flex: 1;
+    max-width: 300px;
+    padding: $padding-lg;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: $secondary-dark;
+    border-radius: 10px;
+  }
+
+  &__photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+
+  &__text {
+    font-size: $font-size-sm;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: $text-white;
+  }
+
+  &__author {
+    color: $text-white;
+    font-weight: bold;
+    font-size: $font-size-sm;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &--left {
+      left: 10px;
+    }
+
+    &--right {
+      right: 10px;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

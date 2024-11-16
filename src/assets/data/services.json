@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Teeth Whitening",
+    "description": "Brighten your smile with our professional teeth whitening services, which remove stains and discoloration to give you a whiter, healthier-looking smile.",
+    "benefits": ["Removes stains", "Improves appearance", "Boosts confidence"],
+    "beforeImage": "before-whitening.jpg",
+    "afterImage": "after-whitening.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dental Implants",
+    "description": "Our dental implants provide a permanent solution for missing teeth, restoring both functionality and aesthetics for a natural-looking smile.",
+    "benefits": [
+      "Restores functionality",
+      "Long-lasting",
+      "Improves oral health"
+    ],
+    "beforeImage": "before-implants.jpg",
+    "afterImage": "after-implants.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dental Crowns",
+    "description": "Dental crowns are custom-made caps that cover damaged or decayed teeth, restoring shape, size, and function while protecting the underlying structure.",
+    "benefits": [
+      "Protects damaged teeth",
+      "Improves appearance",
+      "Restores chewing ability"
+    ],
+    "beforeImage": "before-crowns.jpg",
+    "afterImage": "after-crowns.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Root Canal Therapy",
+    "description": "Root canal therapy treats infected or damaged tooth pulp, relieving pain and preserving the tooth structure to maintain a natural smile.",
+    "benefits": [
+      "Relieves pain",
+      "Prevents further infection",
+      "Saves natural teeth"
+    ],
+    "beforeImage": "before-root-canal.jpg",
+    "afterImage": "after-root-canal.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Orthodontics (Braces)",
+    "description": "Our orthodontic treatments include braces and aligners, designed to correct misaligned teeth and jaws for improved aesthetics and functionality.",
+    "benefits": [
+      "Straightens teeth",
+      "Improves bite",
+      "Enhances facial symmetry"
+    ],
+    "beforeImage": "before-braces.jpg",
+    "afterImage": "after-braces.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dental Veneers",
+    "description": "Dental veneers are thin, custom-made shells that cover the front surface of teeth, enhancing their appearance by changing color, shape, and size.",
+    "benefits": [
+      "Improves smile aesthetics",
+      "Durable solution",
+      "Natural appearance"
+    ],
+    "beforeImage": "before-veneers.jpg",
+    "afterImage": "after-veneers.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Tooth Extraction",
+    "description": "Tooth extraction is the removal of damaged or decayed teeth, often necessary when a tooth cannot be saved or poses a risk to oral health.",
+    "benefits": [
+      "Prevents further infection",
+      "Relieves pain",
+      "Makes room for orthodontic treatment"
+    ],
+    "beforeImage": "before-extraction.jpg",
+    "afterImage": "after-extraction.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Gum Disease Treatment",
+    "description": "Gum disease treatment focuses on cleaning and repairing gum tissue to prevent further infection and maintain overall oral health.",
+    "benefits": [
+      "Reduces gum inflammation",
+      "Prevents tooth loss",
+      "Improves overall health"
+    ],
+    "beforeImage": "before-gum-disease.jpg",
+    "afterImage": "after-gum-disease.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Dental Cleaning",
+    "description": "Professional dental cleaning removes plaque and tartar buildup from the teeth, promoting healthy gums and a brighter smile.",
+    "benefits": [
+      "Prevents cavities",
+      "Reduces plaque",
+      "Improves oral hygiene"
+    ],
+    "beforeImage": "before-cleaning.jpg",
+    "afterImage": "after-cleaning.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Fluoride Treatment",
+    "description": "Fluoride treatment strengthens tooth enamel, protecting teeth from decay and reducing sensitivity.",
+    "benefits": [
+      "Strengthens enamel",
+      "Prevents cavities",
+      "Reduces tooth sensitivity"
+    ],
+    "beforeImage": "before-fluoride.jpg",
+    "afterImage": "after-fluoride.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Dental Sealants",
+    "description": "Dental sealants are thin coatings applied to the chewing surfaces of molars to prevent cavities and protect against decay.",
+    "benefits": [
+      "Prevents cavities",
+      "Protects tooth surfaces",
+      "Reduces need for fillings"
+    ],
+    "beforeImage": "before-sealants.jpg",
+    "afterImage": "after-sealants.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Invisalign (Clear Aligners)",
+    "description": "Invisalign clear aligners offer a discreet alternative to traditional braces, gradually straightening teeth without metal brackets or wires.",
+    "benefits": ["Nearly invisible", "Removable", "Comfortable fit"],
+    "beforeImage": "before-invisalign.jpg",
+    "afterImage": "after-invisalign.jpg"
+  }
+]
